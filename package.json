@@ -7,13 +7,15 @@
     },
     "devDependencies": {
         "@types/p5": "^0.9.0",
+        "browser-sync": "^2.27.10",
         "parcel": "^2.5.0",
         "typescript": "^4.6.4"
     },
     "scripts": {
         "build-tsc": "npx tsc",
         "start": "parcel index.html --open",
-        "build": "parcel build index.html"
+        "build": "parcel build index.html",
+        "serve-gitpod": "browser-sync -f dist/*.html -f dist/*.js --no-open --no-ui --listen 0.0.0.0"
     },
     "keywords": [
         "p5js",
