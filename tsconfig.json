@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "isolatedModules": true,
+        "allowJs": true,
+        "target": "es6",
+        "lib": [
+            "es6",
+            "dom"
+          ],
+          "allowSyntheticDefaultImports": true
+    },
+
+    "include": [
+        "./src/**/*"
+    ]
+}
