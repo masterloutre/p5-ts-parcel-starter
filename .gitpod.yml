@@ -1,9 +1,17 @@
 # Commands to start on workspace startup
 tasks:
-  - init: npm install && npm run build
-  - name: Start Watch
+  - name: Install and build
+    init: >
+      npm install && 
+      npm run build &&
+      gp sync-done parcel-build
+
+  - name: Parcel watch
+    init: gp sync-await parcel-build
     command: npm run watch
+
   - name: Start server
+    init: gp sync-await parcel-build
     command: npm run serve-gitpod
     openMode: split-right
 # Ports to expose on workspace startup
