@@ -16,7 +16,8 @@
         "start": "parcel src/index.html --open",
         "build": "parcel build src/index.html",
         "watch": "parcel watch src/index.html",
-        "serve-gitpod": "browser-sync dist -f dist/*.html -f dist/*.js --no-open --no-ui --listen 0.0.0.0"
+        "build-dev": "NODE_ENV=development parcel build src/index.html --no-optimize --no-scope-hoist --no-content-hash",
+        "serve-gitpod": "browser-sync dist -f 'dist/*.html' -f 'dist/*.js' --no-open --no-ui --listen 0.0.0.0"
     },
     "keywords": [
         "p5js",

@@ -3,7 +3,7 @@ tasks:
   - name: Install and build
     init: >
       npm install && 
-      npm run build &&
+      npm run build-dev &&
       gp sync-done parcel-build
 
   - name: Parcel watch
