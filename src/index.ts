@@ -12,7 +12,7 @@ const sketch = (p5: P5) => {
   }
 
   p5.draw = () => {
-    p5.background("green")
+    p5.background("orange")
     const dimension = Math.min(
       window.innerWidth,
       window.innerHeight,

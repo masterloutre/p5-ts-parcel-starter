@@ -13,9 +13,9 @@
     },
     "scripts": {
         "build-tsc": "npx tsc",
-        "start": "parcel index.html --open",
-        "build": "parcel build index.html",
-        "watch": "parcel watch index.html",
+        "start": "parcel src/index.html --open",
+        "build": "parcel build src/index.html",
+        "watch": "parcel watch src/index.html",
         "serve-gitpod": "browser-sync dist -f dist/*.html -f dist/*.js --no-open --no-ui --listen 0.0.0.0"
     },
     "keywords": [
