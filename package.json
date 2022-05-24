@@ -15,7 +15,8 @@
         "build-tsc": "npx tsc",
         "start": "parcel index.html --open",
         "build": "parcel build index.html",
-        "serve-gitpod": "browser-sync -f dist/*.html -f dist/*.js --no-open --no-ui --listen 0.0.0.0"
+        "watch": "parcel watch index.html",
+        "serve-gitpod": "browser-sync dist -f dist/*.html -f dist/*.js --no-open --no-ui --listen 0.0.0.0"
     },
     "keywords": [
         "p5js",

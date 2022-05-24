@@ -1,8 +1,11 @@
 # Commands to start on workspace startup
 tasks:
   - init: npm install
-    command: npm run build && npm run start
+    command: npm run watch
+    
+  - init: npm install
+    command: npm run serve-gitpod
 # Ports to expose on workspace startup
 ports:
-  - port: 1234
+  - port: 3000
     onOpen: open-preview
